@@ -16,6 +16,13 @@
 <resources>
     <!-- Color of the FOD view -->
     <color name="config_fodColor">#00ffff</color>
+
+    <!-- Whether the always on display mode is available. -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
+    <!-- Control whether the always on display mode is enabled by default. This value will be used
+         during initialization when the setting is still null. -->
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
      
     <!-- Enable doze mode -->
     <bool name="doze_display_state_supported">true</bool>
