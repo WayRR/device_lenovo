@@ -17,7 +17,10 @@
     <!-- Color of the FOD view -->
     <color name="config_fodColor">#00ffff</color>
      
-     <!-- Type of a sensor that provides a low-power estimate of the desired display
+    <!-- Enable doze mode -->
+    <bool name="doze_display_state_supported">true</bool>
+     
+    <!-- Type of a sensor that provides a low-power estimate of the desired display
          brightness, suitable to listen to while the device is asleep (e.g. during
          always-on display) -->
     <string name="doze_brightness_sensor_type" translatable="false">com.google.sensor.binned_brightness</string>
