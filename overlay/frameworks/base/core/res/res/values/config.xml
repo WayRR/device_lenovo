@@ -368,34 +368,11 @@
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
      
-    <!-- Enable live display -->
-    <bool name="config_liveDisplayAvailable">true</bool>
+    <!-- Whether the always on display mode is available. -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
-    <!-- Use live display for temperature control-->
-    <bool name="config_nightDisplayAvailable">false</bool>
-     
-    <!-- Enable doze mode -->
-    <bool name="doze_display_state_supported">false</bool>
-
-    <!-- Type of a sensor that provides a low-power estimate of the desired display
-         brightness, suitable to listen to while the device is asleep (e.g. during
-         always-on display) -->
-    <string name="doze_brightness_sensor_type" translatable="false">com.google.sensor.binned_brightness</string>
-
-    <!-- Doze: can we assume the pickup sensor includes a proximity check? -->
-    <bool name="doze_pickup_performs_proximity_check">true</bool>
-
-    <!-- Doze: whether the double tap sensor reports 2D touch coordinates -->
-    <bool name="doze_double_tap_reports_touch_coordinates">true</bool>
-
-    <!-- Doze: Table that translates sensor values from the doze_brightness_sensor_type sensor
-               to brightness values; -1 means keeping the current brightness. -->
-    <integer-array name="config_doze_brightness_sensor_to_brightness">
-        <item>-1</item> <!-- 0: OFF -->
-        <item>100</item> <!-- 1: NIGHT -->
-        <item>120</item> <!-- 2: LOW -->
-        <item>254</item> <!-- 3: HIGH -->
-        <item>255</item> <!-- 4: SUN -->
-    </integer-array>
+    <!-- Control whether the always on display mode is enabled by default. This value will be used
+         during initialization when the setting is still null. -->
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
 </resources>
 
