@@ -56,7 +56,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    vendor/?/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.lenovo
@@ -84,9 +84,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lineage.livedisplay@2.0-service-sdm
 
-PRODUCT_COPY_FILES += \
-    vendor/aim/config/permissions/org.lineageos.livedisplay.xml:system/etc/permissions/org.lineageos.livedisplay.xml
-    
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
