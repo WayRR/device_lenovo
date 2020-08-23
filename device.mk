@@ -62,7 +62,6 @@ PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.lenovo
 
 # Specific
-TARGET_HAS_FOD := true
 EXTRA_FOD_ANIMATIONS := true
 
 # HIDL
